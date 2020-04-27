@@ -44,31 +44,8 @@ class UIComponent extends Component {
 	render() {
 		return (
 			<div>
-				<h1>Docker demo - web</h1>
-				
-				<div>
-					<label>
-					new user:
-					<input type="text" value={this.state.name} onChange={this.handleNameChange} />
-					</label>
-					<button onClick={this.addUser}>Add user</button>
-				</div>
-
-
-                {/* <button onClick={this.getUserList}>get user list</button> */}
-
-				{this.props.reduxState.MyPageOneState.users && 
-				this.props.reduxState.MyPageOneState.users.map(user => (
-					<div className="margin-auto">
-					<div className="flex-container-flex-start">
-					<div className="flex-container">
-						<img className="myavatar" src={require('./avatar.jpg')} /> 
-						<button className="ui basic button">{user.name}</button>
-						<button className="ui basic button">{user.email}</button>					
-					</div>
-					</div>
-					</div>
-				))}
+				<h1>Docker demo - multiple FROM</h1>
+				<h1>1GB -> 1MB (1000% smaller) </h1>
 			</div>
 		);
 	}	
